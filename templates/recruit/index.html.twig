@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello RecruitController!{% endblock %}
+
+{% block body %}
+    <h1 class="text-center">Recruter moi !</h1>
+
+    <form action="" class="w-50 m-auto">
+        <div class="mb-3 ">
+
+            <label for="email" class="form-label">Adresse Email</label>
+            <input type="email" class="form-control" id="email">
+        </div>
+        <div class="mb-3">
+            <label for="input" class="form-label">Message</label>
+            <textarea class="form-control" id="input" rows="3"></textarea>
+
+        </div>
+    </form>
+
+{% endblock %}
