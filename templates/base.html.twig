@@ -15,7 +15,7 @@
         <title> Portfolio-{% block title %}{% endblock %}</title>
     </head>
     <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -24,13 +24,13 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         {% set route = app.request.attributes.get('_route') %}
                     <li class="nav-item">
-                        <a class="nav-link {{ route == 'app_main' ? 'active' }}" aria-current="page" href="{{ path('app_main')}}">Accueil</a>
+                        <a class="nav-link {{ route == 'app_main' ? 'bg-dark text-white' }}" aria-current="page" href="{{ path('app_main')}}">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ route == 'app_creation' ? 'active' }}" aria-current="page" href="{{ path('app_creation')}}">Creation</a>
+                        <a class="nav-link {{ route == 'app_creation' ? 'bg-dark text-white' }}" aria-current="page" href="{{ path('app_creation')}}">Creation</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ route == 'app_recruit' ? 'active' }}" aria-current="page" href="{{ path('app_recruit')}}">Recruter-moi</a>
+                        <a class="nav-link {{ route == 'app_recruit' ? 'bg-dark text-white' }}" aria-current="page" href="{{ path('app_recruit')}}">Recruter-moi</a>
                     </li>
                 </ul>
             </div>
