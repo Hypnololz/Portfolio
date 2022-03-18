@@ -77,6 +77,15 @@
     "doctrine/sql-formatter": {
         "version": "1.1.2"
     },
+    "easycorp/easyadmin-bundle": {
+        "version": "4.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "3.0",
+            "ref": "b131e6cbfe1b898a508987851963fff485986285"
+        }
+    },
     "egulias/email-validator": {
         "version": "3.1.2"
     },
@@ -344,6 +353,18 @@
     "symfony/intl": {
         "version": "v5.4.5"
     },
+    "symfony/lock": {
+        "version": "5.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "5.2",
+            "ref": "a1c8800e40ae735206bb14586fdd6c4630a51b8d"
+        },
+        "files": [
+            "./config/packages/lock.yaml"
+        ]
+    },
     "symfony/mailer": {
         "version": "5.4",
         "recipe": {
@@ -440,6 +461,9 @@
     "symfony/polyfill-php81": {
         "version": "v1.25.0"
     },
+    "symfony/polyfill-uuid": {
+        "version": "v1.25.0"
+    },
     "symfony/process": {
         "version": "v5.4.5"
     },
@@ -451,6 +475,9 @@
     },
     "symfony/proxy-manager-bridge": {
         "version": "v5.4.6"
+    },
+    "symfony/rate-limiter": {
+        "version": "v5.4.3"
     },
     "symfony/routing": {
         "version": "5.4",
@@ -535,6 +562,9 @@
             "./config/packages/twig.yaml",
             "./templates/base.html.twig"
         ]
+    },
+    "symfony/uid": {
+        "version": "v5.4.3"
     },
     "symfony/validator": {
         "version": "5.4",

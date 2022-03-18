@@ -16,14 +16,17 @@
                             Bonjour, Je m'appelle Enzo et je suis développeur web Junior.
                         </p>
                         <p class="fw-bolder fs-4 d-inline-block bg-white text-black">
-                            Passionné, autodidacte et rigoureux, j’effectue une veille permanente sur les nouvelles technologies et m’intéresse aux nouvelles façons de programmer.
+                            Passionné, autodidacte et rigoureux, j’effectue une veille permanente sur les nouvelles
+                            technologies et m’intéresse aux nouvelles façons de programmer.
 
                         </p>
                     </div>
                     <div>
                         <p class="fw-bolder fs-4 d-inline-block bg-white text-black">
-                            Sur ce site confectionner par mes soins vous aurez un aperçu de mes réalisations, un lien vers mon
-                            <a href="https://github.com/Hypnololz">GitHub</a>  ainsi qu'un espace pour m'envoyer un message.
+                            Sur ce site confectionner par mes soins vous aurez un aperçu de mes réalisations, un lien
+                            vers mon
+                            <a href="https://github.com/Hypnololz">GitHub</a> ainsi qu'un espace pour m'envoyer un
+                            message.
                         </p>
                     </div>
 
@@ -38,36 +41,19 @@
 
                 <div class="container-fluid mb-1">
                     <div class="row">
-                        <div class="card m-auto" style="width: 18rem;">
-                            <img src="{{ asset('img/images.jpeg') }}" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title text-black">Card title</h5>
-                                <p class="card-text text-black">Some quick example text to build on the card title and
-                                    make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                        {% for creation in allCreation %}
+                            <div class="card m-auto" style="width: 18rem;">
+                                <img src="{{ asset(creation.mini) }}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-black">{{ creation.name }}</h5>
+                                    <p class="card-text text-black">Some quick example text to build on the card title
+                                        and
+                                        make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">{{ creation.link }}</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card m-auto" style="width: 18rem;">
-                            <img src="{{ asset('img/images.jpeg') }}" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title text-black">Card title</h5>
-                                <p class="card-text text-black">Some quick example text to build on the card title and
-                                    make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                        <div class="card m-auto" style="width: 18rem;">
-                            <img src="{{ asset('img/images.jpeg') }}" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title text-black">Card title</h5>
-                                <p class="card-text text-black">Some quick example text to build on the card title and
-                                    make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Golol</a>
-                            </div>
-                        </div>
-
+                        {% endfor %}
                     </div>
-
                 </div>
             </div>
             <div class="CV vh-100 bg-white w-100">
